@@ -1,0 +1,23 @@
+.header {
+  background-image: url("..//img/backgrounds/background\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.navblock {
+  display: flex;
+}
+
+@media screen and (max-width: 481px) {
+  .navblock {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .navblock {
+    display: flex;
+  }
+}

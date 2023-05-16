@@ -1,0 +1,23 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "header";
+@import "mainheader";
+@import "mainup";
+@import "maindown";
+@import "footer";
+
+
+
+body {
+  font-family: "Lato, Montserrat";
+  font-style: normal;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  
+}
+
