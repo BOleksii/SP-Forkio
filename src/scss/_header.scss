@@ -6,18 +6,15 @@
   min-height: 100vh;
 }
 
+.container {
+  min-height: 100vh;
+}
+
 .navblock {
-  display: flex;
+  @include flex-center;
+  background-color: #27262A;
 }
 
-@media screen and (max-width: 481px) {
-  .navblock {
-    display: flex;
-  }
-}
+@media screen and (max-width: 481px) {}
 
-@media screen and (max-width: 993px) {
-  .navblock {
-    display: flex;
-  }
-}
+@media screen and (max-width: 993px) {}
