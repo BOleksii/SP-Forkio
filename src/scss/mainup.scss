@@ -1,0 +1,136 @@
+@import "mixins";
+@import "variables";
+
+
+//@media (min-width: 481px){}
+//@media (min-width: 993px){}
+
+
+.main__up{
+  &__title{
+    @include headline-h3-s;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 40px;
+  }
+  &__wrapper{
+    text-align: center;
+    img{
+      margin: 0 auto;
+      padding: 36px 0 27px;
+    }
+  }
+  &__title-small{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    color: $text-color-dgr;
+    margin-bottom: 14px;
+  }
+
+
+  &__text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: center;
+    color: $text-color-lgr;
+  }
+  &__image{
+    float: right;
+    margin: 0 -16px;
+    padding-top: 64px;
+    width: 19.8125rem;
+    height: auto;
+  }
+}
+@media (min-width: 481px){
+  .main__up{
+    &__title{
+      @include headline-h3-m;
+      margin: 0 auto;
+      max-width: 100%;
+      color: $text-color-pr;
+      text-align: center;
+      font-size: 3rem;
+    }
+    &__wrapper{
+      display: flex;
+      align-items: flex-start;
+      margin: 60px 0 0 0;
+      img{
+        padding: 0 24px 0 0;
+        width: 100%;
+        max-width: 111px;
+        object-fit: scale-down;
+        max-height: 80px;
+        box-sizing: border-box;
+      }
+    }
+    &__title-small{
+      font-family: "Montserrat",sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0;
+      text-align: left;
+      margin-bottom: 17px;
+    }
+    &__text{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0;
+      text-align: left;
+      color: $text-color-lgr;
+      clear: left;
+    }
+    //&__image{
+    //  float: right;
+    //  margin: 0 -16px;
+    //  padding-top: 64px;
+    //  //width: 50%;
+    //  //max-width: 700px;
+    //  //height: auto;
+    //}
+  }
+}
+
+@media (min-width: 993px) {
+  .main__up{
+    background-color: #F4F4F4;
+    padding: 100px 0 70px 0;
+    &__title{
+      @include headline-h3-l;
+      float: right;
+      display: inline-block;
+      max-width: 50%;
+      color: $text-color-pr;
+      text-align: left;
+    }
+    &__wrapper{
+      width: 50%;
+      margin: 0 0 35px 0;
+      img{
+        padding: 0 24px 0 0;
+        width: 100%;
+        max-width: 111px;
+        object-fit: scale-down;
+        max-height: 80px;
+        box-sizing: border-box;
+      }
+    }
+
+    &__image{
+      position: relative;
+      top: -440px;
+      right: 16px;
+      width: 40%;
+
+    }
+  }
+}

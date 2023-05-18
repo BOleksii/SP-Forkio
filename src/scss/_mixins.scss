@@ -1,3 +1,5 @@
+ @import "variables";
+
 @mixin flex-center {
   display: flex;
   align-items: center;
@@ -20,7 +22,7 @@
 }
 
 @mixin headline-h1 {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -29,22 +31,41 @@
 }
 
 @mixin headline-h2-s {
+  //font-size: 26px;
+  //line-height: 28px;
+  font-family: "Montserrat", sans-serif;
   font-size: 26px;
+  font-weight: 700;
   line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+
 }
 
 @mixin headline-h2-m {
+  font-family: "Montserrat", sans-serif;
   font-size: 42px;
+  font-weight: 700;
   line-height: 42px;
+  letter-spacing: 0;
+  text-align: center;
+
 }
 
 @mixin headline-h2-l {
+  //font-size: 54px;
+  //line-height: 54px;
+  font-family: "Montserrat", sans-serif;
   font-size: 54px;
+  font-weight: 700;
   line-height: 54px;
+  letter-spacing: 0;
+  text-align: center;
+
 }
 
 @mixin headline-h2 {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -53,22 +74,34 @@
 }
 
 @mixin headline-h3-s {
-  font-size: 26px;
-  line-height: 28px;
+  font-family: "Montserrat",sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0;
+  color: $text-color-pr;
 }
 
 @mixin headline-h3-m {
+  font-family: "Montserrat",sans-serif;
   font-size: 42px;
+  font-weight: 700;
   line-height: 44px;
+  letter-spacing: 0;
+  color: $text-color-pr;
 }
 
 @mixin headline-h3-l {
+  font-family: "Montserrat",sans-serif;
   font-size: 48px;
+  font-weight: 700;
   line-height: 50px;
+  letter-spacing: 0;
+  color: $text-color-pr;
 }
 
 @mixin headline-h3 {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -76,7 +109,7 @@
 }
 
 @mixin mainup-title {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -86,7 +119,7 @@
 }
 
 @mixin mainup-text {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -96,7 +129,7 @@
 }
 
 @mixin maindown-text {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: italic;
   font-weight: 700;
   font-size: 16px;

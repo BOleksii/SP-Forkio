@@ -10,12 +10,13 @@
 
 
 body {
-  font-family: "Lato, Montserrat";
+  font-family: "Lato, Montserrat", serif;
   font-style: normal;
+  min-width: 320px;
 }
 
 .container {
-  max-width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }

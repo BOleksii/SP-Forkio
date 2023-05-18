@@ -29,10 +29,11 @@ const paths = {
 function cleanDist() {
   return gulp.src(paths.dist.self, { read: false })
     .pipe(clean());
-};
+}
 
 function buildStyles() {
   return gulp.src(paths.src.styles)
+
     .pipe(sass().on("error", sass.logError))
     .pipe(
       autoprefixer({
@@ -47,14 +48,14 @@ function buildStyles() {
     }))
     .pipe(concat("styles.min.css"))
     .pipe(gulp.dest(paths.dist.styles));
-};
+}
 
 function buildJs() {
   return gulp.src(paths.src.js)
     .pipe(minifyjs())
     .pipe(concat("scripts.min.js"))
     .pipe(gulp.dest(paths.dist.jsBuild));
-};
+}
 
 function imageMin() {
   return gulp.src(paths.src.img)
