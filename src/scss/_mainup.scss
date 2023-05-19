@@ -107,7 +107,7 @@
     &__title{
       @include headline-h3-l;
       float: right;
-      display: inline-block;
+      display: block;
       max-width: 50%;
       color: $text-color-pr;
       text-align: left;
