@@ -4,6 +4,7 @@
 
 //@media screen and (min-width: 993px) {}
 .main__header{
+	margin-top: 110px;
 	&__title{
 		@include headline-h2-s;
 		color: $text-color-prdrk;
@@ -61,6 +62,7 @@
   }
 @media (min-width: 481px) {
 	.main__header{
+		margin-top: 125px;
 		&__title{
 			@include headline-h2-m;
 			color: $text-color-prdrk;
@@ -87,6 +89,7 @@
 }
 @media (min-width: 993px) {
 	.main__header{
+		margin-top: 98px;
 		&__title{
 			@include headline-h2-l;
 			color: $text-color-prdrk;
