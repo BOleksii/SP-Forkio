@@ -15,18 +15,38 @@
 <body>
 
   <header class="header">
+    <div class="navblock">
+            <div class="navname">
+        <div class="change-logos">
+          <a href="#"><img class="navname__logo" src="./dist/img/logos/header logo gr.svg" alt="Logo"></a>
+          <a href="#"><img class="navname__logo--hover" src="./dist/img/logos/header logo hover.svg" alt="Logo"></a>
+        </div>
+        <a class="navname__link" href="#"><span class="navname__brand">ForkIO</span></a>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list active">
+          <li class="navigation__item"><a class="navigation__link" href="#">Overview</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">About Fork</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Buying Options</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Support</a></li>
+        </ul>
+      </nav>
+      <button class="button">Buy Now</button>
+      <div class="burgermenu">
+        <span class="burgermenu__item"></span>
+        <span class="burgermenu__item"></span>
+        <span class="burgermenu__item"></span>
+      </div>
+      </div>
     <div class="container">
-      <div class="navblock">
-        <img class="navblock__logo" src="./dist/img/logos/header logo gr.svg" alt="Logo">
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="#">Overview</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">About Fork</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Buying Options</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Support</a></li>
-          </ul>
-        </nav>
-        <button class="navblock__button">Buy Now</button>
+      <div class="info">
+        <h1 class="info__headlines">Fork App</h1>
+        <p class="info__text1">A real gamechanger in the world of web development</p>
+        <p class="info__text2">v. 2.8 For Mac and Windows</p>
+      </div>
+      <div class="download">
+        <button class="button download__button">Download For Free Now</button>
+        <span class="download__info">Unlimited 30-Days Trial Period</span>
       </div>
     </div>
   </header>

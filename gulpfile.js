@@ -17,7 +17,7 @@ const paths = {
     js: "./src/js/*.js",
   },
   dist: {
-    self: "./dist/**/*",
+    self: "./dist/**",
     styles: "./dist/css",
     jsBuild: "./dist/js/",
     minImg: "./dist/img/",
