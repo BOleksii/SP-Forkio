@@ -12,7 +12,7 @@
     @include headline-h3-s;
     margin: 0 auto;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 50px;
   }
   &__wrapper{
     text-align: center;
@@ -45,7 +45,8 @@
     float: right;
     margin: 0 -16px;
     padding-top: 64px;
-    width: 19.8125rem;
+    width: 100%;
+    max-width: 700px;
     height: auto;
   }
 }
@@ -58,6 +59,7 @@
       color: $text-color-pr;
       text-align: center;
       font-size: 3rem;
+      padding: 0 50px;
     }
     &__wrapper{
       display: flex;
@@ -70,6 +72,7 @@
         object-fit: scale-down;
         max-height: 80px;
         box-sizing: border-box;
+
       }
     }
     &__title-small{
@@ -90,14 +93,13 @@
       color: $text-color-lgr;
       clear: left;
     }
-    //&__image{
-    //  float: right;
-    //  margin: 0 -16px;
-    //  padding-top: 64px;
-    //  //width: 50%;
-    //  //max-width: 700px;
-    //  //height: auto;
-    //}
+    &__image{
+      float: right;
+      margin: 0 -16px;
+      padding-top: 64px;
+      width: 100%;
+      max-width: 700px;
+    }
   }
 }
 
@@ -114,7 +116,7 @@
       text-align: left;
     }
     &__wrapper{
-      width: 50%;
+      width: 40%;
       margin: 0 0 35px 0;
       img{
         padding: 0 24px 0 0;
@@ -123,14 +125,16 @@
         object-fit: scale-down;
         max-height: 80px;
         box-sizing: border-box;
+        margin-left: 90px;
       }
     }
 
     &__image{
       position: relative;
-      top: -440px;
+      top: -590px;
       right: 16px;
-      width: 40%;
+      width: 100%;
+      max-width: 700px;
 
     }
   }
