@@ -17,7 +17,7 @@ const paths = {
     js: "./src/js/*.js",
   },
   dist: {
-    self: "./dist/**",
+    self: "./dist",
     styles: "./dist/css",
     jsBuild: "./dist/js/",
     minImg: "./dist/img/",
@@ -27,7 +27,7 @@ const paths = {
 }
 
 function cleanDist() {
-  return gulp.src(paths.dist.self, { read: false })
+  return gulp.src(paths.dist.self, { force: true })
     .pipe(clean());
 };
 
@@ -79,6 +79,6 @@ function watch() {
 
 
 
-gulp.task("build", gulp.series(cleanDist, gulp.parallel(buildStyles, buildJs, imageMin)));
+gulp.task("build", gulp.series(cleanDist, buildStyles, buildJs, imageMin));
 gulp.task("dev", watch);
 

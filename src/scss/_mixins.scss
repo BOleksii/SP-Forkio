@@ -44,7 +44,7 @@
 }
 
 @mixin headline-h2 {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat";
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -53,8 +53,8 @@
 }
 
 @mixin headline-h3-s {
-  font-size: 26px;
-  line-height: 28px;
+  font-size: 36px;
+  line-height: 48px;
 }
 
 @mixin headline-h3-m {
@@ -68,7 +68,7 @@
 }
 
 @mixin headline-h3 {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat";
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -76,7 +76,7 @@
 }
 
 @mixin mainup-title {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -86,7 +86,7 @@
 }
 
 @mixin mainup-text {
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
