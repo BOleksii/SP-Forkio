@@ -1,14 +1,18 @@
-.main__up{  
+.main__up{
+  display: grid; 
+  grid-template-columns: 1fr;
+  justify-content: center; 
   &__title{
     @include headline-h3-s;
-    margin: 0 auto;
+    color: $text-color-pr;
+    // margin: 0 auto;
     text-align: center;
-    padding: 0 50px;
+    // padding: 0 50px;
   }
   &__wrapper{
     text-align: center;
     img{
-      margin: 0 auto;
+      // margin: 0 auto;
       padding: 36px 0 27px;
     }
   }
@@ -33,24 +37,25 @@
     color: $text-color-lgr;
   }
   &__image{
-    float: right;
-    margin: 0 -16px;
-    padding-top: 64px;
-    width: 100%;
-    max-width: 700px;
-    height: auto;
+    display: none;
+    // float: right;
+    // margin: 0 -16px;
+    // padding-top: 64px;
+    // width: 100%;
+    // max-width: 700px;
+    // height: auto;
   }
 }
 @media (min-width: 481px){
   .main__up{
     &__title{
       @include headline-h3-m;
-      margin: 0 auto;
+      // margin: 0 auto;
       max-width: 100%;
       color: $text-color-pr;
       text-align: center;
       font-size: 3rem;
-      padding: 0 50px;
+      // padding: 0 50px;
     }
     &__wrapper{
       display: flex;
@@ -82,14 +87,15 @@
       letter-spacing: 0;
       text-align: left;
       color: $text-color-lgr;
-      clear: left;
+      // clear: left;
     }
     &__image{
-      float: right;
-      margin: 0 -16px;
-      padding-top: 64px;
-      width: 100%;
-      max-width: 700px;
+      display: none;
+      // float: right;
+      // margin: 0 -16px;
+      // padding-top: 64px;
+      // width: 100%;
+      // max-width: 700px;
     }
   }
 }
@@ -100,14 +106,14 @@
     padding: 100px 0 70px 0;
     &__title{
       @include headline-h3-l;
-      float: right;
-      display: block;
-      max-width: 50%;
+      // float: right;
+      // display: block;
+      // max-width: 50%;
       color: $text-color-pr;
       text-align: left;
     }
     &__wrapper{
-      width: 40%;
+      // width: 40%;
       margin: 0 0 35px 0;
       img{
         padding: 0 24px 0 0;
@@ -121,11 +127,12 @@
     }
 
     &__image{
-      position: relative;
-      top: -590px;
-      right: 16px;
-      width: 100%;
-      max-width: 700px;
+      display: none;
+      // position: relative;
+      // top: -590px;
+      // right: 16px;
+      // width: 100%;
+      // max-width: 700px;
 
     }
   }
