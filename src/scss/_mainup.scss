@@ -1,18 +1,24 @@
-.main__up{  
-  &__title{
+.main__up {
+  position: relative;
+
+  &__title {
     @include headline-h3-s;
     margin: 0 auto;
     text-align: center;
     padding: 0 50px;
+
   }
-  &__wrapper{
+
+  &__wrapper {
     text-align: center;
-    img{
+
+    img {
       margin: 0 auto;
       padding: 36px 0 27px;
     }
   }
-  &__title-small{
+
+  &__title-small {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -24,7 +30,7 @@
   }
 
 
-  &__text{
+  &__text {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -32,18 +38,24 @@
     text-align: center;
     color: $text-color-lgr;
   }
-  &__image{
-    float: right;
+
+  &__image {
+    // float: right;
     margin: 0 -16px;
     padding-top: 64px;
     width: 100%;
     max-width: 700px;
     height: auto;
+    position: absolute;
+    bottom: 0;
   }
 }
-@media (min-width: 481px){
-  .main__up{
-    &__title{
+
+@media (min-width: 481px) {
+  .main__up {
+    position: relative;
+
+    &__title {
       @include headline-h3-m;
       margin: 0 auto;
       max-width: 100%;
@@ -52,11 +64,13 @@
       font-size: 3rem;
       padding: 0 50px;
     }
-    &__wrapper{
+
+    &__wrapper {
       display: flex;
       align-items: flex-start;
       margin: 60px 0 0 0;
-      img{
+
+      img {
         padding: 0 24px 0 0;
         width: 100%;
         max-width: 111px;
@@ -66,8 +80,9 @@
 
       }
     }
-    &__title-small{
-      font-family: "Montserrat",sans-serif;
+
+    &__title-small {
+      font-family: "Montserrat", sans-serif;
       font-size: 16px;
       font-weight: 400;
       line-height: 21px;
@@ -75,7 +90,8 @@
       text-align: left;
       margin-bottom: 17px;
     }
-    &__text{
+
+    &__text {
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
@@ -84,32 +100,39 @@
       color: $text-color-lgr;
       clear: left;
     }
-    &__image{
-      float: right;
+
+    &__image {
+      // float: right;
       margin: 0 -16px;
       padding-top: 64px;
       width: 100%;
       max-width: 700px;
+      position: absolute;
+      bottom: 0;
     }
   }
 }
 
 @media (min-width: 993px) {
-  .main__up{
+  .main__up {
     background-color: #F4F4F4;
     padding: 100px 0 70px 0;
-    &__title{
+    // position: relative;
+
+    &__title {
       @include headline-h3-l;
-      float: right;
+      // float: right;
       display: block;
       max-width: 50%;
       color: $text-color-pr;
       text-align: left;
     }
-    &__wrapper{
+
+    &__wrapper {
       width: 40%;
       margin: 0 0 35px 0;
-      img{
+
+      img {
         padding: 0 24px 0 0;
         width: 100%;
         max-width: 111px;
@@ -120,12 +143,13 @@
       }
     }
 
-    &__image{
-      position: relative;
-      top: -590px;
+    &__image {
+      // top: -590px;
       right: 16px;
       width: 100%;
       max-width: 700px;
+      position: absolute;
+      bottom: 0;
 
     }
   }

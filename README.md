@@ -1,6 +1,21 @@
 # SP-Forkio
 
+The participants of step-project "Forkio" are: 
+1. Oleksii Bernatskyi.
+2. Inna Matros.
 
+The student Inna Matros`s made the task №1. 
+The student Oleksii Bernatskyi`s made the task №2. 
+
+In this project`s been used such technologies:
+1. The classes in scss files`re written with help of method BEM.
+2. The blocks and elements on the page`s been placed with the help of flex and grid.
+3. For written the css code has been used preprocessor SCSS.
+4. In scss`s been created such files:
+4.1. Reset.scss.
+4.2. Variables.scss.
+4.3. Mixins.scss.
+Also the project`s been divided into 5 sections that imported into main.scss file.
 
 ## Getting started
 

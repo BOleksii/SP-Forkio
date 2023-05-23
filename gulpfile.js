@@ -27,7 +27,7 @@ const paths = {
 }
 
 function cleanDist() {
-  return gulp.src(paths.dist.self, { force: true })
+  return gulp.src(paths.dist.self, { allowEmpty: true })
     .pipe(clean());
 }
 
