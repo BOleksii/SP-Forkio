@@ -1,6 +1,9 @@
+
+
 .main__header{
-	margin-top: 110px;
+
 	&__title{
+		margin-top: 110px;
 		@include headline-h2-s;
 		color: $text-color-prdrk;
 	}

@@ -17,7 +17,7 @@ const paths = {
     js: "./src/js/*.js",
   },
   dist: {
-    self: "./dist",
+    self: "./dist/",
     styles: "./dist/css",
     jsBuild: "./dist/js/",
     minImg: "./dist/img/",
@@ -27,13 +27,12 @@ const paths = {
 }
 
 function cleanDist() {
-  return gulp.src(paths.dist.self, { force: true })
+  return gulp.src(paths.dist.self, { allowEmpty: true })
     .pipe(clean());
 }
 
 function buildStyles() {
   return gulp.src(paths.src.styles)
-
     .pipe(sass().on("error", sass.logError))
     .pipe(
       autoprefixer({
