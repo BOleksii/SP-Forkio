@@ -1,19 +1,19 @@
-.main__up {
-  position: relative;
-
-  &__title {
+.main__up{
+  display: grid; 
+  grid-template-columns: 1fr;
+  justify-content: center; 
+  &__title{
     @include headline-h3-s;
-    margin: 0 auto;
+    color: $text-color-pr;
+    // margin: 0 auto;
     text-align: center;
-    padding: 0 50px;
-
+    // padding: 0 50px;
   }
 
   &__wrapper {
     text-align: center;
-
-    img {
-      margin: 0 auto;
+    img{
+      // margin: 0 auto;
       padding: 36px 0 27px;
     }
   }
@@ -38,16 +38,14 @@
     text-align: center;
     color: $text-color-lgr;
   }
-
-  &__image {
+  &__image{
+    display: none;
     // float: right;
-    margin: 0 -16px;
-    padding-top: 64px;
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    position: absolute;
-    bottom: 0;
+    // margin: 0 -16px;
+    // padding-top: 64px;
+    // width: 100%;
+    // max-width: 700px;
+    // height: auto;
   }
 }
 
@@ -57,12 +55,12 @@
 
     &__title {
       @include headline-h3-m;
-      margin: 0 auto;
+      // margin: 0 auto;
       max-width: 100%;
       color: $text-color-pr;
       text-align: center;
       font-size: 3rem;
-      padding: 0 50px;
+      // padding: 0 50px;
     }
 
     &__wrapper {
@@ -98,17 +96,15 @@
       letter-spacing: 0;
       text-align: left;
       color: $text-color-lgr;
-      clear: left;
+      // clear: left;
     }
-
-    &__image {
+    &__image{
+      display: none;
       // float: right;
-      margin: 0 -16px;
-      padding-top: 64px;
-      width: 100%;
-      max-width: 700px;
-      position: absolute;
-      bottom: 0;
+      // margin: 0 -16px;
+      // padding-top: 64px;
+      // width: 100%;
+      // max-width: 700px;
     }
   }
 }
@@ -122,14 +118,13 @@
     &__title {
       @include headline-h3-l;
       // float: right;
-      display: block;
-      max-width: 50%;
+      // display: block;
+      // max-width: 50%;
       color: $text-color-pr;
       text-align: left;
     }
-
-    &__wrapper {
-      width: 40%;
+    &__wrapper{
+      // width: 40%;
       margin: 0 0 35px 0;
 
       img {
@@ -143,13 +138,13 @@
       }
     }
 
-    &__image {
+    &__image{
+      display: none;
+      // position: relative;
       // top: -590px;
-      right: 16px;
-      width: 100%;
-      max-width: 700px;
-      position: absolute;
-      bottom: 0;
+      // right: 16px;
+      // width: 100%;
+      // max-width: 700px;
 
     }
   }
