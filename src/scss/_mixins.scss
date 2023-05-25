@@ -68,8 +68,11 @@
 }
 
 @mixin headline-h3-s {
-  font-size: 36px;
-  line-height: 48px;
+font-size: 32px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0px;
+text-align: center;
 }
 
 @mixin headline-h3-m {
