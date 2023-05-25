@@ -7,13 +7,13 @@
   &__title{
   @include headline-h3-s;
   color: $text-color-pr;
-  padding: 35px 65px; 
+  padding: 35px 65px;
   }
   &__wrapper{
     text-align: center;
     img{
-      align-self: center
-      justify-self center;
+      // align-self: center;
+      // justify-self: center;
     }
   }
   &__title-small{
@@ -44,6 +44,7 @@
 
 @media (min-width: 481px){
   .main__up{
+    overflow: hidden;
     &__iner{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -147,12 +148,12 @@
 }
 &__image{
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 30px;
   grid-column: 2;
   grid-row: 1;
   width: 50%;
-  max-width: 750px;
+ background-size: cover;
   height: 519px;
   align-self: end;
   margin-right: -16px;
